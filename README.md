@@ -117,12 +117,14 @@ There's also a convenience method for print-based debugging: `self.debug()`. You
 
 AoC input takes a number of forms, so there are a number of simple modes for input parsing. Your generated `Solution` class should inherit from one of the following classes, which will parse `self.input` for you:
 
-| Inherited Class                  | description                                               | sample input for this mode |
-| -------------------------------- | --------------------------------------------------------- | -------------------------- |
-| `StrSplitSolution` (the default) | `str[]`, split by a specified separator (default newline) | a<br>b<br>c<br>d<br>e      |
-| `TextSolution`                   | one solid block of text                                   | `abcde`                    |
-| `IntSplitSolution`               | `int[]`, split by a specified separator (default newline) | 1<br>2<br>3<br>4<br>5      |
-| `IntSolution`                    | one number                                                | `12345`                    |
+| Inherited Class                  | description                                                                                 | sample input for this mode |
+|----------------------------------|---------------------------------------------------------------------------------------------|----------------------------|
+| `StrSplitSolution` (the default) | `str[]`, split by a specified separator (default newline)                                   | a<br>b<br>c<br>d<br>e      |
+| `TextSolution`                   | one solid block of text                                                                     | `abcde`                    |
+| `IntSplitSolution`               | `int[]`, split by a specified separator (default newline)                                   | 1<br>2<br>3<br>4<br>5      |
+| `IntSolution`                    | one number                                                                                  | `12345`                    |
+| `CharSplitSolution`              | `str[][]`, split by a specified separator (default newline) where each line is a char array | abc<br>def<br>ghi<br>jkl   |
+
 
 ```py
 # input file is "12345"

@@ -40,6 +40,8 @@ class InputTypes(Enum):
     STRSPLIT = auto()
     # int[], split by a split by a specified separator (default newline)
     INTSPLIT = auto()
+    # str[][], split by a specified separator (default newline) with each line a char array
+    CHARSPLIT = auto()
 
 
 # almost always int, but occasionally str; None is fine to disable a part
@@ -142,12 +144,15 @@ class BaseSolution(Generic[I]):
         if (
             self.input_type is InputTypes.STRSPLIT
             or self.input_type is InputTypes.INTSPLIT
+            or self.input_type is InputTypes.CHARSPLIT
         ):
             # default to newlines
             parts = data.split(self.separator)
 
             if self.input_type == InputTypes.INTSPLIT:
                 return [int(i) for i in parts]
+            elif self.input_type == InputTypes.CHARSPLIT:
+                return [list(i) for i in parts]
 
             return parts
 
@@ -216,6 +221,12 @@ class IntSplitSolution(BaseSolution[list[int]]):
 
     input_type = InputTypes.INTSPLIT
 
+class CharSplitSolution(BaseSolution[list[str]]):
+    """
+    input is a str[], split by a specified separator (default newline); specify self.separator to tweak
+    """
+
+    input_type = InputTypes.CHARSPLIT
 
 # https://stackoverflow.com/a/65681955/1825390
 SolutionClassType = TypeVar("SolutionClassType", bound=BaseSolution)
