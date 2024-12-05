@@ -11,11 +11,14 @@ However, because the program's memory has been corrupted, there are also many in
 ## Part 1
 Scan the corrupted memory for uncorrupted mul instructions. What do you get if you add up all of the results of the multiplications?
 
-### Approach
+### Approach 1
 - find all the indexes of right after 'mul('
 - check if next is number until hit 3 or ',' or not number
 - check if next is number until hit 3 or ')' or not number
 - multiply and add
+### Approach 2
+- use regex to find mul(/d{1,2,3}, /d{1,2,3})
+- for each match multiply each digit
 
 ## Part 2
 
