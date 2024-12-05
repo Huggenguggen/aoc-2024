@@ -8,20 +8,20 @@ To use this base class for your own solutions:
 
 1. Ensure you have Python `3.12` or higher. You can use [mise](https://mise.jdx.dev/) or [pyenv](https://github.com/pyenv/pyenv) to manage your Python versions. It may work on older versions, but `3.12`-specific features will be added without further breaking changes
 2. Create a new repo using this template ([docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)) and clone it locally
-3. Start a new solution using `./start`
+3. Start a new solution using `python ./start.py`
 4. Edit the newly created file at `solutions/YEAR/day_01/solution.py`
-5. Run your code answers using `./advent`
+5. Run your code answers using `python ./advent.py`
 6. Repeat and enjoy!
 
 ## Commands
 
 This repo has two main commands: `start` and `advent`.
 
-### `./start`
+### `./start.py`
 
 #### Usage
 
-> `./start [-h] [--year YEAR] [day]`
+> `python ./start.py [-h] [--year YEAR] [day]`
 
 Scaffold files to start a new Advent of Code solution
 
@@ -36,15 +36,15 @@ Scaffold files to start a new Advent of Code solution
 
 #### Examples
 
-- `./start`
-- `./start 2`
-- `./start 3 --year 2019`
+- `python ./start.py`
+- `python ./start.py 2`
+- `python ./start.py 3 --year 2019`
 
-### `./advent`
+### `python ./advent.py`
 
 #### Usage
 
-> `./advent [--year year] [--test-data] [--debug] [--profile] [--slow] [--time] [day]`
+> `python ./advent.py [--year year] [--test-data] [--debug] [--profile] [--slow] [--time] [day]`
 
 Run a specific day of Advent of Code
 
@@ -68,11 +68,11 @@ Run a specific day of Advent of Code
 
 #### Examples
 
-- `./advent`
-- `./advent 2`
-- `./advent 5 --year 2019`
-- `./advent 7 --test-data`
-- `./advent 9 -t --debug`
+- `python ./advent.py`
+- `python ./advent.py 2`
+- `python ./advent.py 5 --year 2019`
+- `python ./advent.py 7 --test-data`
+- `python ./advent.py 9 -t --debug`
 
 ## File Structure
 
