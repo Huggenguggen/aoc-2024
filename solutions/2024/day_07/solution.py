@@ -42,7 +42,7 @@ class Solution(StrSplitSolution):
                 total += equation[0]
         return total
     
-    # @answer(1234)
+    @answer(362646859298554)
     def part_2(self) -> int:
         total = 0
         for equation in self.equations:
