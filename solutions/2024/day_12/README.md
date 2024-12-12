@@ -36,3 +36,8 @@ Can bfs to find regions, get area and perimeter
 Fortunately, the Elves are trying to order so much fence that they qualify for a bulk discount!
 
 Under the bulk discount, instead of using the perimeter to calculate the price, you need to use the number of sides each region has. Each straight section of fence counts as a side, regardless of how long it is.
+
+### Approach
+Note that the number of corners is also the number of sides
+- have to count the number of corners
+- still use bfs flood fills
