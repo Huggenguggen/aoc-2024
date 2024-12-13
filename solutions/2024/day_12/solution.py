@@ -10,7 +10,7 @@ class Solution(CharSplitSolution):
     _year = 2024
     _day = 12
 
-    # @answer(1234)
+    @answer(1473620)
     def part_1(self) -> int:
         self.seen = set()
         total = 0
@@ -48,7 +48,7 @@ class Solution(CharSplitSolution):
         self.seen |= visited
         return (area, perimeter)
 
-    # @answer(1234)
+    @answer(902620)
     def part_2(self) -> int:
         visited = set()
         total = 0
