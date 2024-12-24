@@ -115,11 +115,11 @@ class Solution(StrSplitSolution):
             button_presses[directions] += count
         return
 
-    # @answer(1234)
+    @answer(176650)
     def part_1(self) -> int:
         return self.enter_codes(self.input, 2)
 
-    # @answer(1234)
+    @answer(217698355426872)
     def part_2(self) -> int:
         return self.enter_codes(self.input, 25)
 
