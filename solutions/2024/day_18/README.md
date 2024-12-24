@@ -65,3 +65,5 @@ The Historians aren't as used to moving around in this pixelated universe as you
 To determine how fast everyone needs to go, you need to determine the first byte that will cut off the path to the exit.
 
 Simulate more of the bytes that are about to corrupt your memory space. What are the coordinates of the first byte that will prevent the exit from being reachable from your starting position? (Provide the answer as two integers separated by a comma with no other characters.)
+
+go backwards from the max obstacles and try again and again until valid path
