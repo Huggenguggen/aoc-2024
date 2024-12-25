@@ -1,3 +1,6 @@
 pyright
 ruff
 numpy
+networkx
+matplotlib
+scipy
