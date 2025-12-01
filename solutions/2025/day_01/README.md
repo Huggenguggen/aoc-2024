@@ -5,5 +5,9 @@
 
 ## Part 1
 
+A more simple use modulo to solve
+
 ## Part 2
+
+Found a more elegant formula to solve efficiently while taking into account edge cases
 
